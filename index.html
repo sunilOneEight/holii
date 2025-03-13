@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ik{
+            padding:80px;
+            width:250px;
+            height:170px;
+
+        }
+        #bu{
+            width:60px;
+            height: 40px;
+        }
+        #bu:active{
+            width:60px;
+            height: 40px;
+            background-color: rgb(183, 30, 83);
+        }
+        #res{
+            color:red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        </style>
+</head>
+<body>
+    <center>
+    <img src="Gift-22.png"id="ik">
+    <h2 id="res"></h2>
+    <br>
+    <button onclick="fun()" id="bu">open</button>
+</center>
+</body>
+</html>
+<script>
+    function fun(){
+        document.getElementById("ik").src="gun.gif";
+        var res="happy holi 😊";
+        document.getElementById("res").innerHTML=res;
+    }
+</script>
